@@ -1,0 +1,171 @@
+body {
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: #8ecfe4b8;
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.calculator {
+    height: 670px;
+    width: 450px;
+    border: 2px solid #2B2B2B;
+    box-sizing: border-box;
+}
+#display {
+    border : 5px solid #f0eeee2c;
+    background-color: #212121;
+    height: 90px;
+    width: 425px;
+    font-size: 40px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.all-buttons {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 30px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.button,
+.button-operator,
+.button-equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    height : 85px;
+    width : 85px;
+    border-radius: 50%;
+    background-color: #2B2B2B;
+}
+.button:hover {
+    background-color: #3a3a3aed;
+}
+.button:active {
+    background-color: #4c4c4c;
+    transform: scale(0.95);
+}
+.button-operator {
+    height : 85px;
+    width : 85px;
+    border-radius: 50%;
+    background-color: #2b2e3d;
+}
+.button-operator:hover {
+    background-color: #3c3f4d;
+}
+.button-operator:active {
+    background-color: #4e5260;
+    transform: scale(0.95);
+}
+.button-equal {
+    height : 85px;
+    width : 85px;
+    border-radius: 50%;
+    background-color: #a8c2fb;
+    color: black;
+}
+.button-equal:hover {
+    background-color: #8ecfe4b8;
+}
+.button-equal:active {
+    background-color: #7ab8e0;
+    transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 455px) {
+    .calculator {
+        width: 95vw;
+        height: auto;
+        min-width: 180px;
+        max-width: 280px;
+    }
+    #display {
+        width: 90vw;
+        min-width: 140px;
+        max-width: 255px;
+        font-size: 1.5rem;
+    }
+    .all-buttons {
+        gap: 10px;
+        padding: 20px;
+        font-size: 20px;
+        width: 240px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .button,
+    .button-operator,
+    .button-equal {
+        height: 50px;
+        width: 50px;
+        font-size: 0.95rem;
+        flex: 0 0 50px;
+    }
+    h1 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 290px) {
+    .calculator {
+        width: 98vw;
+        height: auto;
+        min-width: 50px;
+        max-width: 180px;
+    }
+    #display {
+        width: 96vw;
+        min-width: 50px;
+        max-width: 156px;
+        font-size: 0.8rem;
+    }
+    .all-buttons {
+        gap: 10px;
+        padding: 11px;
+        font-size: 12px;
+        width: 150px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .button,
+    .button-operator,
+    .button-equal {
+        height: 28px;
+        width: 28px;
+        font-size: 0.7rem;
+        flex: 0 0 28px;
+    }
+    h1 {
+        font-size: 0.8rem;
+        margin-top: 4px;
+        margin-bottom: 30px;
+    }
+}
